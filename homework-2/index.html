@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collatz Problem</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Collatz Problemi</h1>
+        <input type="number" id="startNumber" placeholder="Başlangıç sayısını giriniz">
+        <button onclick="calculateCollatz()">Hesapla</button>
+
+        <h2>Sonuçlar:</h2>
+        <p id="result"></p>
+
+        <button onclick="findLongestChain()">1 milyondan küçük en uzun zincir</button>
+        <p id="longestChain"></p>
+    </div>
+</body>
+</html>
