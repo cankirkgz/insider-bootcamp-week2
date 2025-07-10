@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+#startButton {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#resetButton {
+  background-color: #f44336;
+  color: white;
+}
+
+#timer {
+  font-size: 24px;
+  margin-top: 30px;
+  color: #333;
+}
