@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Görev Yönetimi</h1>
+    <form id="task-form">
+        <div>
+            <label for="title">Başlık:</label>
+            <input type="text" id="title" placeholder="Görev Başlığı" required>
+        </div>
+        <div>
+            <label for="description">Açıklama:</label>
+            <input type="text" id="description" placeholder="Görev Açıklaması">           
+        </div>
+
+        <div>
+            <label for="priority">Önem Seviyesi</label>
+            <input type="radio" id="low" name="priority" value="low"> Düşük
+            <input type="radio" id="medium" name="priority" value="medium"> Orta    
+            <input type="radio" id="high" name="priority" value="high"> Yüksek
+        </div>
+        <div>
+            <label for="completed">Tamamlanma Durumu</label>
+            <input type="checkbox" id="completed"> Tamamlandı
+        </div>
+        <button type="submit">Görevi Ekle</button>
+    </form>
+    <div id="filter-buttons">
+        <button id="filter-completed" type="button">Sadece Tamamlananları Göster</button>
+        <button id="sort-priority" type="button">Önceliğe Göre Sırala</button>
+    </div>
+    <div id="task-list">
+        <h2>Görev Listesi</h2>
+        <ul id="tasks"></ul>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
